@@ -1,0 +1,167 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Time Convertion</title>
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <style type="text/css">
+	 	body{
+		background-image: url(bgtt.avif);
+		background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-size: cover;}
+		}
+		text {
+		text-align: center;
+		}
+		.center {
+  		margin-left:auto;
+  		margin-right: auto;
+		}
+
+		.center th{
+		padding: 70px;
+		}	
+	
+</style>
+</head>
+<center> <body>
+	<br>
+	<center><h1 style="color: #3B5492; font-family: montserrat; font-size: 70px;" >Time Converter</h1></center>
+	<br>
+	<br>
+<table class="center">
+	<tbody>		<tr>
+		<th style="background-color:#3380A4; font-family: cursive; font-size: 25px; color: white;"><center> Seconds </center>
+			<br>
+			 <center> <p><input type="text" id="second"></p> </center>
+			 <br>
+			<center><input type="button" class="btn btn-primary" onclick="sectomin()" value="Minutes">
+			<input type="button" class="btn btn-primary" onclick="sectohr()" value="Hours">
+			<input type="button" class="btn btn-primary" onclick="sectod()" value="Days"></center>
+			<br>
+		</th>
+		</tr>
+	</tbody>
+</table>
+</div> 
+</div>
+<br>
+<table class="center">
+	<tbody>
+		<tr>
+		<th style="background-color:#3380A4; font-family: cursive; font-size: 25px; color: white;"> <center> Minutes </center>
+			<br>
+			<center><p><input type="text" id="minute"></p> </center>
+			<br>
+			<center><input type="button" class="btn btn-primary" onclick="mintosec()" value="Seconds">
+			<input type="button" class="btn btn-primary" onclick="mintohr()" value="Hours">
+			<input type="button" class="btn btn-primary" onclick="mintod()" value="Days"></center>
+			<br>
+		</th>
+		</tr>
+	<br>
+</tbody></table>
+<table class="center">
+	<tbody>
+		<tr>
+		<th style="background-color:#3380A4; font-family: cursive; font-size: 25px; color: white;"><center> Hours </center>
+			<br>
+			<center> <p name><input type="text" id="hour"></p> </center>
+			<br>
+			<center><input type="button" class="btn btn-primary" onclick="hrtos()" value="Seconds">
+			<input type="button" class="btn btn-primary" onclick="hrtom()" value="Minutes">
+			<input type="button" class="btn btn-primary" onclick="hrtod()" value="Days"></center>
+			<br>
+		</th>
+		</tr>
+	<br>
+</tbody></table>
+<br>
+<table class="center">
+	<tbody>
+		<tr>
+		<th style="background-color:#3380A4; font-family: cursive; font-size: 25px; color: white;"><center> Days </center>
+			<br>
+			<center> <p><input type="text" id="day"></p> </center>
+			<br>
+			<center><input type="button" class="btn btn-primary" onclick="dts()" value="Seconds">
+			<input type="button" class="btn btn-primary" onclick="dtm()" value="Minutes">
+			<input type="button" class="btn btn-primary" onclick="dth()" value="Hours"></center>
+			<br>
+		</th>
+		</tr>
+	</tbody>
+</table>
+<script>
+	function sectomin(){
+		x = (document.getElementById('second').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function sectohr(){
+		x = (document.getElementById('second').value);
+		y = 3600;		
+		alert(x / y);
+	}
+
+	function sectod(){ 
+		x = (document.getElementById('second').value);
+		y = 86400;		
+		alert(x / y);
+	}
+
+
+	function mintosec(){
+		x = (document.getElementById('minute').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function mintohr(){
+		x = (document.getElementById('minute').value);
+		y = 60;		
+		alert(x / y);
+	}
+	function mintod(){
+		x = (document.getElementById('minute').value);
+		y = 1440;		
+		alert(x / y);
+	}
+
+
+	function hrtos(){
+		x = (document.getElementById('hour').value);
+		y = 3600;		
+		alert(x * y);
+	}
+	function hrtom(){
+		x = (document.getElementById('hour').value);
+		y = 60;		
+		alert(x * y);
+	}
+	function hrtod(){
+		x = (document.getElementById('hour').value);
+		y = 24;		
+		alert(x / y);
+	}
+
+
+	function dts(){
+		x = (document.getElementById('day').value);
+		y = 86400;		
+		alert(x * y);
+	}
+	function dtm(){
+		x = (document.getElementById('day').value);
+		y = 1440;		
+		alert(x * y);
+	}
+	function dth(){
+		x = (document.getElementById('day').value);
+		y = 24;		
+		alert(x * y);
+	}
+</script>
+</body> </center>
+</html>
